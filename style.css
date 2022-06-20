@@ -1,5 +1,4 @@
-
-header{
+header {
     width: 1000px;
     display: grid;
     margin-left: auto;
@@ -54,9 +53,14 @@ header{
     margin: 5px;
 }
 
-#gateau {
+#gateau_result {
     height: 300px;
     width: 250px;
+}
+
+.gateau_stocker{
+    height: 200px;
+    width: 150px;
 }
 
 .down {
@@ -67,9 +71,41 @@ header{
     justify-items: center;
 }
 
+.existing_receipts{
+    display: flex;
+}
+.receipts_section_left{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#up{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* #new_reciepts * {
+    background-color: rgba(143, 139, 139, 0.601);
+
+    border: none;
+    height: max-content;
+    max-width: 50px;
+    min-width: 20px;
+}
+#new_reciepts{
+    background-color: rgba(143, 139, 139, 0.601);
+    display: flex;
+}
+ p{
+    margin: 0px;
+    height: 20px;
+ } */
 
 
 
-footer{
+
+footer {
     height: 300px;
 }
