@@ -1,0 +1,20 @@
+.ingredient{
+    height: 40px;
+    width: 40px;
+}
+#receipts{
+    display: flex;
+}
+.receipts{
+    background-color: rgba(143, 139, 139, 0.601);
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+#btn_green{
+    background-color: #00aa37;
+    height: 50px;
+    width: 125px;
+}
