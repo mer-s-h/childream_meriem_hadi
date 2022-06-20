@@ -1,45 +1,75 @@
-.ingredient{
+
+header{
+    width: 1000px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+
+
+.ingredient {
     height: 40px;
     width: 40px;
 }
-#receipts{
+
+#receipts {
     display: flex;
 }
-.receipts{
+
+.receipts {
     background-color: rgba(143, 139, 139, 0.601);
     border-radius: 5px;
-    border : none;
+    border: none;
     margin: 5px;
     height: 50px;
     width: 50px;
 }
 
-#btn_green{
+#btn_green {
     background-color: #00aa37;
+    color: white;
+    font-size: 15px;
     border-radius: 5px;
-    border : none;
+    border: none;
     margin: 5px;
     height: 50px;
     width: 125px;
 }
 
-.ingredient_btn{
+.ingredient_btn {
     background-color: #00aa37;
+    color: white;
+    font-size: 15px;
     border-radius: 5px;
-    border : none;
+    border: none;
     margin: 5px;
     height: 20px;
     width: 50px;
 }
 
-.picked_ingredient{
+.picked_ingredient {
     height: 40px;
     width: 40px;
     margin: 5px;
 }
 
-#gateau{
+#gateau {
     height: 300px;
     width: 250px;
 }
 
+.down {
+    width: 1000px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+
+
+
+
+footer{
+    height: 300px;
+}
