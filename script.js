@@ -15,17 +15,18 @@ food.forEach(element => {
 
     document.getElementById(element).addEventListener("click", function () {
         if (array_receipts.includes(element)) {
-
+            receipts.children[array_receipts.indexOf(element)].children[1].innerHTML++
         }
         else if (array_receipts.length < 3) {
             Img.setAttribute('src', './src/emoji/' + element + '.png');
-            Img.setAttribute("class", "ingredient");
+            Img.setAttribute("class", "picked_ingredient");
             receipts.children[array_receipts.length].children[0].appendChild(Img.cloneNode(true));
+            receipts.children[array_receipts.length].children[1].innerHTML = 1
             array_receipts.push(element)
         }
-    })
-
+    })  
 })
+
 
 
 
