@@ -1,0 +1,102 @@
+[
+    {
+        "name": "gateau a la fraise",
+        "first": "strawberry",
+        "first_qty": 3,
+        "seconde": "glass-of-milk",
+        "seconde_qty": 1,
+        "third": "egg",
+        "third_quatity": 2,
+        "img": "./src/gateau_fraise.jpg "
+    },
+    {
+        "name": "gateau au chocolat",
+        "first": "chocolate-bar",
+        "first_qty": 1,
+        "seconde": "glass-of-milk",
+        "seconde_qty": 1,
+        "third": "egg",
+        "third_quatity": 2,
+        "img": "./src/gateau_chocolat.jpg "
+    },
+    {
+        "name": "salade",
+        "first": "leafy-green",
+        "first_qty": 3,
+        "seconde": "olive",
+        "seconde_qty": 1,
+        "third": "tomato",
+        "third_quatity": 2,
+        "img": "./src/salade.jpg "
+    },
+    {
+        "name": "burger maison",
+        "first": "bagel",
+        "first_qty": 1,
+        "seconde": "cut-of-meat",
+        "seconde_qty": 1,
+        "third": "cheese-wedge",
+        "third_quatity": 1,
+        "img": "./src/burger.jpeg "
+    },
+    {
+        "name": "boeuf bourguignon",
+        "first": "cut-of-meat",
+        "first_qty": 3,
+        "seconde": "potato",
+        "seconde_qty": 1,
+        "third": "wine",
+        "third_quatity": 1,
+        "img": "./src/boeuf_bourguignon.jpg "
+    },
+    {
+        "name": "creppe",
+        "first": "glass-of-milk",
+        "first_qty": 1,
+        "seconde": "egg",
+        "seconde_qty": 2,
+        "third": "butter",
+        "third_quatity": 1.5,
+        "img": "./src/creppe.jpg "
+    },
+    {
+        "name": "croque monsieur",
+        "first": "cut-of-meat",
+        "first_qty": 1,
+        "seconde": "cheese-wedge",
+        "seconde_qty": 1,
+        "third": "bread",
+        "third_quatity": 2,
+        "img": "./src/croque-monsieur.jpeg "
+    },
+    {
+        "name": "maki",
+        "first": "fish",
+        "first_qty": 1,
+        "seconde": "cooked-rice",
+        "seconde_qty": 1,
+        "third": "leafy-green",
+        "third_quatity": 1,
+        "img": "./src/maki.jpg "
+    },
+    {
+        "name": "paella",
+        "first": "cooked-rice",
+        "first_qty": 1,
+        "seconde": "fried-shrimp",
+        "seconde_qty": 6,
+        "third": "tomato",
+        "third_quatity": 4,
+        "img": "./src/paella.jpg "
+    },
+    {
+        "name": "salade de fuit",
+        "first": "strawberry",
+        "first_qty": 4,
+        "seconde": "blueberries",
+        "seconde_qty": 10,
+        "third": "green-apple",
+        "third_quatity": 2,
+        "img": "./src/salade_de_fuit.png "
+    }
+]

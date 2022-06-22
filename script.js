@@ -1,9 +1,6 @@
 var food = ["avocado", "bacon", "bagel", "baguette-bread", "banana", "beans", "bell-pepper", "blueberries", "bread", "broccoli", "butter", "candy", "carrot", "cheese-wedge", "cherries", "chestnut", "chocolate-bar", "coconut", "cooked-rice", "croissant", "cucumber", "cut-of-meat", "ear-of-corn", "egg", "eggplant", "fried-shrimp", "garlic", "glass-of-milk", "grapes", "green-apple", "hot-pepper", "ice", "kiwi-fruit", "leafy-green", "lemon", "lollipop", "mango", "meat-on-bone", "melon", "mushroom", "olive", "onion", "peach", "peanuts", "pear", "pineapple", "potato", "poultry-leg", "red-apple", "salt", "strawberry", "tangerine", "tomato", "watermelon", "honey", "wine", "fish"]
 var food_fr = ["avocat", "bacon", "bagel", "baguette", "banane", "haricot", "poivron", "myrtilles", "pain", "broccoli", "beurre", "bonbon", "carotte", "fromage", "cerise", "chataigne", "chocolat", "noix-de-coco", "riz", "croissant", "concombre", "viande", "maïs", "oeuf", "aubergine", "crevette", "Ail", "lait", "raisin", "pomme-verte", "piment", "glace", "kiwi", "salade", "citron", "sucette", "mangue", "viande-osseu", "melon", "champignon", "olive", "oignon", "peche", "cacahuete", "poire", "ananas", "patate", "cuisse_de_poulet", "pomme_rouge", "sel", "fraise", "mandarine", "tomate", "pasteque", "miel", "vin", "poisson"]
-var new_reciep = [{ "name": "gateau a la fraise", "first": "strawberry", "first_qty": 3, "seconde": "glass-of-milk", "seconde_qty": 1, "third": "egg", "third_quatity": 2, "img": "./src/gateau_fraise.jpg " },
-{ "name": "gateau au chocolat", "first": "chocolate-bar", "first_qty": 1, "seconde": "glass-of-milk", "seconde_qty": 1, "third": "egg", "third_quatity": 2, "img": "./src/gateau_chocolat.jpg " },
-{ "name": "salade", "first": "leafy-green", "first_qty": 3, "seconde": "olive", "seconde_qty": 1, "third": "tomato", "third_quatity": 2, "img": "./src/salade.jpg " },
-{ "name": "burger maison", "first": "bagel", "first_qty": 1, "seconde": "cut-of-meat", "seconde_qty": 1, "third": "cheese-wedge", "third_quatity": 1, "img": "./src/burger.jpeg " }]
+var new_reciep = [{ "name": "gateau a la fraise", "first": "strawberry", "first_qty": 3, "seconde": "glass-of-milk", "seconde_qty": 1, "third": "egg", "third_quatity": 2, "img": "./src/gateau_fraise.jpg " }, { "name": "gateau au chocolat", "first": "chocolate-bar", "first_qty": 1, "seconde": "glass-of-milk", "seconde_qty": 1, "third": "egg", "third_quatity": 2, "img": "./src/gateau_chocolat.jpg " }, { "name": "salade", "first": "leafy-green", "first_qty": 3, "seconde": "olive", "seconde_qty": 1, "third": "tomato", "third_quatity": 2, "img": "./src/salade.jpg " }, { "name": "burger maison", "first": "bagel", "first_qty": 1, "seconde": "cut-of-meat", "seconde_qty": 1, "third": "cheese-wedge", "third_quatity": 1, "img": "./src/burger.jpeg " }, { "name": "boeuf bourguignon", "first": "cut-of-meat", "first_qty": 3, "seconde": "potato", "seconde_qty": 1, "third": "wine", "third_quatity": 1, "img": "./src/boeuf_bourguignon.jpg " }, { "name": "creppe", "first": "glass-of-milk", "first_qty": 1, "seconde": "egg", "seconde_qty": 2, "third": "butter", "third_quatity": 1.5, "img": "./src/creppe.jpg " }, { "name": "croque monsieur", "first": "cut-of-meat", "first_qty": 1, "seconde": "cheese-wedge", "seconde_qty": 1, "third": "bread", "third_quatity": 2, "img": "./src/croque-monsieur.jpeg " }, { "name": "maki", "first": "fish", "first_qty": 1, "seconde": "cooked-rice", "seconde_qty": 1, "third": "leafy-green", "third_quatity": 1, "img": "./src/maki.jpg " }, { "name": "paella", "first": "cooked-rice", "first_qty": 1, "seconde": "fried-shrimp", "seconde_qty": 6, "third": "tomato", "third_quatity": 4, "img": "./src/paella.jpg " }, { "name": "salade de fuit", "first": "strawberry", "first_qty": 4, "seconde": "blueberries", "seconde_qty": 10, "third": "green-apple", "third_quatity": 2, "img": "./src/salade_de_fuit.png " }]
 
 var emoji = document.getElementById("all_emoji")
 var receipts = document.getElementById("receipts")
@@ -12,7 +9,6 @@ var preparer = document.getElementById("btn_green")
 var Img = document.createElement("img");
 var column_right = document.getElementById("column_right")
 var submit = document.getElementById("submit")
-// var add_formule = document.getElementById("formule")
 var url = document.getElementById("url")
 
 var array_receipts = []
@@ -83,30 +79,42 @@ preparer.addEventListener("click", function () {
 
 })
 
-// display 3 last reciepts
 
-for (let i = new_reciep.length - 1; i > new_reciep.length - 4; i--) {
-    var div = document.createElement("div")
-    div.setAttribute("class", "existing_receipts")
-    var left = document.createElement("section")
-    left.setAttribute("class", "receipts_section_left")
-    var right = document.createElement("section")
-    right.setAttribute("class", "receipts_section_right")
 
-    var h2 = document.createElement("h2");
-    var text_h2 = document.createTextNode(new_reciep[i].name + "\n");
+// display 3 reciepts
 
-    left.innerHTML = "<div id=\"the_reciepe\"><img class=\"ingredient\" src=\"./src/emoji/" + new_reciep[i].first + ".png \" >" + "*" + new_reciep[i].first_qty + "+" + "<img class=\"ingredient\" src=\"./src/emoji/" + new_reciep[i].seconde + ".png \" >" + "*" + new_reciep[i].seconde_qty + "+" + "<img class=\"ingredient\" src=\"./src/emoji/" + new_reciep[i].third + ".png \" >" + "*" + new_reciep[i].third_quatity + "</div>"
-    left.appendChild(text_h2);
+var is_displayed = []
+for (let index = 0; index < 3; index++) {
+    var i = Math.floor(Math.random() * (new_reciep.length));
 
-    div.append(left, right)
-    column_right.appendChild(div);
+    if (is_displayed.includes(i)) {
+        index--
+    } else {
+        is_displayed.push(i)
 
-    Img.setAttribute('src', new_reciep[i].img);
-    Img.setAttribute('alt', "gateau");
-    Img.setAttribute("class", "gateau_stocker");
-    right.appendChild(Img.cloneNode(true));
 
+        var div = document.createElement("div")
+        div.setAttribute("class", "existing_receipts")
+        var left = document.createElement("section")
+        left.setAttribute("class", "receipts_section_left")
+        var right = document.createElement("section")
+        right.setAttribute("class", "receipts_section_right")
+
+        var h2 = document.createElement("h2");
+        var text_h2 = document.createTextNode(new_reciep[i].name + "\n");
+
+        left.innerHTML = "<div id=\"the_reciepe\"><img class=\"ingredient\" src=\"./src/emoji/" + new_reciep[i].first + ".png \" >" + "*" + new_reciep[i].first_qty + "+" + "<img class=\"ingredient\" src=\"./src/emoji/" + new_reciep[i].seconde + ".png \" >" + "*" + new_reciep[i].seconde_qty + "+" + "<img class=\"ingredient\" src=\"./src/emoji/" + new_reciep[i].third + ".png \" >" + "*" + new_reciep[i].third_quatity + "</div>"
+        left.appendChild(text_h2);
+
+        div.append(left, right)
+        column_right.appendChild(div);
+
+        Img.setAttribute('src', new_reciep[i].img);
+        Img.setAttribute('alt', "gateau");
+        Img.setAttribute("class", "gateau_stocker");
+        right.appendChild(Img.cloneNode(true));
+
+    }
 }
 
 //display choices
@@ -135,15 +143,7 @@ food.forEach((element, key) => {
     select_3.appendChild(option.cloneNode(true));
 });
 
-
-
 // to add a new reciepe
-
-
-// document.getElementById()
-
-// ingrediant-select_1
-// nbr_1
 
 submit.addEventListener("click", function () {
 
@@ -159,56 +159,7 @@ submit.addEventListener("click", function () {
         "img": url.value
     }
 
-
-
-
-
-
-
-
-    // var res = add_formule.value
-
-    // res = res.replaceAll("+", ",");
-    // res = res.replaceAll("*", ",");
-    // res = res.replaceAll("=", ",");
-    // res = res.split(",");
-
-    // res.forEach(element => {
-
-    // })
-
-    // res.forEach((element) => {
-    //     if (food_fr.includes(element)) {
-    //         index = food_fr.indexOf(element)
-    //         element = food[index]
-    //         // console.log(food[index]);
-    //         // console.log(element);
-    //     }
-    // });
-
-    // console.log(res);
-
-    // var formule = {
-    //     "name": res[6],
-    //     "first": res[0],
-    //     "first_qty": res[1],
-    //     "seconde": res[2],
-    //     "seconde_qty": res[3],
-    //     "third": res[4],
-    //     "third_quatity": res[5],
-    //     "img": url.value
-    // }
-
-    // // console.log(new_reciep);
-
-
-    // console.log(res);
-
     new_reciep.push(formule)
-    console.log(new_reciep);
 })
-
-
-// demain 16h lien
 
 
