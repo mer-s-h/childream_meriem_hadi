@@ -55,12 +55,16 @@ header {
 
 #gateau_result {
     height: 300px;
-    width: 250px;
+    width: auto;
 }
 
-.gateau_stocker{
-    height: 200px;
-    width: 150px;
+.gateau_stocker {
+    width: 200px;
+    height: auto;
+
+    /* width: auto;
+    min-width: 200px;
+    max-height: 100px; */
 }
 
 .down {
@@ -71,15 +75,25 @@ header {
     justify-items: center;
 }
 
-.existing_receipts{
+.existing_receipts {
     display: flex;
-}
-.receipts_section_left{
-    display: flex;
-    flex-direction: column-reverse;
+    justify-content: space-between;
+    border: 2px solid rgba(143, 139, 139, 0.271);
+    box-shadow: 5px 5px 5px rgba(143, 139, 139, 0.601);
+    border-radius: 5px;
+    width: 500px;
+    margin: 10px;
 }
 
-#up{
+.receipts_section_left {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#up {
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
