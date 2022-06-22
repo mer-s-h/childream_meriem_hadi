@@ -6,6 +6,10 @@ header {
     justify-items: center;
 }
 
+#header_img {
+    width: 500px;
+}
+
 
 .ingredient {
     height: 40px;
@@ -25,7 +29,7 @@ header {
     width: 50px;
 }
 
-#btn_green {
+.btn_green {
     background-color: #00aa37;
     color: white;
     font-size: 15px;
@@ -59,7 +63,7 @@ header {
 }
 
 .gateau_stocker {
-    width: 200px;
+    width: 150px;
     height: auto;
 
     /* width: auto;
@@ -68,7 +72,7 @@ header {
 }
 
 .down {
-    width: 1000px;
+    width: 1200px;
     display: grid;
     margin-left: auto;
     margin-right: auto;
@@ -81,8 +85,12 @@ header {
     border: 2px solid rgba(143, 139, 139, 0.271);
     box-shadow: 5px 5px 5px rgba(143, 139, 139, 0.601);
     border-radius: 5px;
-    width: 500px;
+    width: 450px;
     margin: 10px;
+}
+
+#reciep_name {
+    font-size: large;
 }
 
 .receipts_section_left {
@@ -100,25 +108,53 @@ header {
     margin-top: 50px;
 }
 
-/* #new_reciepts * {
-    background-color: rgba(143, 139, 139, 0.601);
-
-    border: none;
-    height: max-content;
-    max-width: 50px;
-    min-width: 20px;
-}
-#new_reciepts{
-    background-color: rgba(143, 139, 139, 0.601);
+form {
     display: flex;
+    flex-direction: column;
 }
- p{
-    margin: 0px;
-    height: 20px;
- } */
 
+form * {
+    margin-top: 5px;
+    margin-bottom: 5px;
 
+}
 
+#column_right {
+    margin: 15px;
+}
+
+#column_left {
+    width: 600px;
+    height: 300px;
+    padding: 15px;
+    margin-top: 35px;
+    border: 2px solid rgba(143, 139, 139, 0.271);
+    box-shadow: 5px 5px 5px rgba(143, 139, 139, 0.601);
+    border-radius: 5px;
+}
+
+.field {
+    border: none;
+    background-color: rgba(143, 139, 139, 0.271);
+    height: 30px;
+}
+
+.tiny {
+    width: 70px;
+    border: none;
+    background-color: rgba(143, 139, 139, 0);
+    
+}
+
+.tiny_nbr {
+    width: 40px;
+    border: none;
+    background-color: rgba(143, 139, 139, 0);
+}
+
+#name_formule{
+    width: 70px;
+}
 
 footer {
     height: 300px;
